@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(NBT_HOME)/csharp/v1.1/init.xml" />
+  <PropertyGroup>
+    <NBT_Name>SponsorBlock.Net</NBT_Name>
+    <NBT_Singleframe>false</NBT_Singleframe>
+    <NBT_Version>0.1</NBT_Version>
+    <NBT_Summary>
+      The NiTiS library including collections
+    </NBT_Summary>
+
+    <NBT_Tabs>NiTiS;SponsorBlock;YouTube;Wrapper</NBT_Tabs>
+    <NBT_Frameworks>net6.0;netstandard2.1;netcoreapp3.1;net5.0;net48</NBT_Frameworks>
+    <NBT_Nullable>enable</NBT_Nullable>
+
+    <NBT_IconType>link</NBT_IconType>
+    <NBT_IconPath>https://raw.githubusercontent.com/NiTiS-Dev/meta/singleton/ntscr/core/original.png</NBT_IconPath>
+
+  </PropertyGroup>
+  <Import Project="$(NBT_HOME)/csharp/v1.1/post.xml" />
+</Project>

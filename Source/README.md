@@ -1,0 +1,2 @@
+# SponsorBlock.Net
+SponsorBlock wrapper

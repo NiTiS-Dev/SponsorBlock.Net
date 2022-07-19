@@ -47,7 +47,12 @@ jobs:
         run: |
           cd .pack/
           dotnet nuget push *.nupkg --source https://nuget.pkg.github.com/acraven/index.json --api-key ${GITHUB_TOKEN} --skip-duplicate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: Nuget Upload
         run: |
           cd .pack/
           dotnet nuget push *.nupkg --source https://api.nuget.org/v3/index.json --api-key ${GITHUB_TOKEN} --skip-duplicate
+        env:
+          NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
